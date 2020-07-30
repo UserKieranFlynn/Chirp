@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chirp">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RecordAudioActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".BrowseSignInActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".DisplayChirpTweetsActivity"
+            android:parentActivityName=".BrowseSignInActivity">
+        </activity>
+
+        <activity android:name=".GoLiveSignInActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".GoLiveGetAccountsActivity"
+            android:parentActivityName=".GoLiveSignInActivity">
+        </activity>
+
+        <activity android:name=".GoLiveOptionsActivity"
+            android:parentActivityName=".GoLiveGetAccountsActivity">
+        </activity>
+
+        <activity android:name=".PostTweetActivity"
+            android:parentActivityName=".ShareRecordingActivity">
+        </activity>
+
+        <activity android:name=".ShareRecordingActivity"
+            android:parentActivityName=".RecordAudioActivity">
+        </activity>
+
+        <activity android:name=".GoogleDriveService"
+            android:parentActivityName=".ShareRecordingActivity">
+        </activity>
+
+        <activity android:name=".GoogleDriveUpload">
+        </activity>
+
+        <activity android:name=".GoLiveTweetsActivity"
+            android:parentActivityName=".GoLiveGetAccountsActivity">
+        </activity>
+
+        <activity android:name=".UsersOwnTweetsActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".UserSignInActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

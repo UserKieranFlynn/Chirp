@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chirp</string>
+    <string name="record_tweet">Record a Tweet</string>
+    <string name="go_live">Go Live</string>
+    <string name="post_tweet">Share on Twitter</string>
+    <string name="browse_chirp">Browse Chirp</string>
+    <string name="user_tweets">User Tweets</string>
+    <string name="CONSUMER_KEY">mDiyGVz9UnYZuivTXfDapLdSJ</string>
+    <string name="CONSUMER_SECRET">rWBWe2VOu62oWeNRg6GMw5lDe28khSjmLzlOVDBe6EQhZgOqjj</string>
+    <string name="successful_tweet">Tweet posted successfully!</string>
+    <string name="upload_to_drive">Upload to Google Drive</string>
+    <string name="download_file">Download File</string>
+    <string name="FILE_NOT_FOUND_EXCEPTION">File cannot be found or has been deleted.</string>
+</resources>
